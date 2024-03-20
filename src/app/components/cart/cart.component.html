@@ -1,0 +1,12 @@
+<app-product-list></app-product-list>
+
+<div style="padding: 20px">
+<h1>cart</h1>
+@for(item of cartService.getItems(); track item.id){
+    <div class="cart-item">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price }}</p>
+    </div>
+}
+
+</div>
